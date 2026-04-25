@@ -31,5 +31,9 @@ Backend-сервис для сокращения ссылок с TTL, анали
 - `GET /links/{code}/stats`
 - `GET /health`
 
+## CI/CD
+- CI (`.github/workflows/ci.yml`): запуск lint и tests на `push`/`pull_request`.
+- CD (`.github/workflows/cd.yml`): сборка Docker-образа и публикация в GitHub Container Registry (`ghcr.io`) на каждый push в `main`.
+
 ## Техотчет
 - `docs/TECH_REPORT.md`
